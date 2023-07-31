@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Gameboy Color HTML/CSS</title>
+</head>
+
+<body>
+    <!-- Contenedor principal de la Gameboy -->
+    <div class="carcasa">
+        <!-- Sección de encendido de la Gameboy -->
+        <div class="Encendido">
+            <input type="button" id="boton" value="Reproducir"></button>
+        </div>
+        <!-- Marco de la Gameboy que contiene la pantalla y el LED de encendido -->
+        <div class="marco">
+            <!-- LED de encendido -->
+            <div id="led_on" class="led led_on">
+            </div>
+            <!-- Pantalla de la Gameboy y texto "GAMEBOY COLOR" -->
+            <div class="pantalla">
+                <video id="video" src="/boot.mp4"></video>
+                <span class="color">GAMEBOY</span>
+                <span class="c">C</span>
+                <span class="o">O</span>
+                <span class="l">L</span>
+                <span class="oo">O</span>
+                <span class="r">R</span>
+            </div>
+        </div>
+        <!-- Marca "Nintendo" en la parte inferior -->
+        <div class="nintendo">
+            Nintendo
+        </div>
+        <!-- Zona central de los botones de control -->
+        <div class="mid">
+            <!-- Panel direccional -->
+            <div class="pad">
+                <div id="centro">
+                    <p>●</p> <!-- Botón central del pad -->
+                </div>
+                <div id="arriba">
+                    <p>▲</p> <!-- Botón de dirección hacia arriba -->
+                </div>
+                <div id="der">
+                    <p>►</p> <!-- Botón de dirección hacia la derecha -->
+                </div>
+                <div id="abajo">
+                    <p>▼</p> <!-- Botón de dirección hacia abajo -->
+                </div>
+                <div id="izq">
+                    <p>◀</p> <!-- Botón de dirección hacia la izquierda -->
+                </div>
+            </div>
+            <!-- Botones "A" y "B" -->
+            <div class="ab">
+                <div id="a">
+                    <p>A</p> <!-- Botón "A" -->
+                </div>
+                <div id="b">
+                    <p>B</p> <!-- Botón "B" -->
+                </div>
+            </div>
+        </div>
+        <!-- Panel inferior con los botones "SELECT", "START" y el altavoz -->
+        <div class="bot">
+            <div class="vacio"></div>
+            <!-- Sección de los botones "SELECT" y "START" -->
+            <div class="ss">
+                <div id="select">
+                    <p id="sel">SELECT</p> <!-- Botón "SELECT" -->
+                </div>
+                <div id="start">
+                    <p id="str">START</p> <!-- Botón "START" -->
+                </div>
+            </div>
+            <!-- Altavoz de la Gameboy -->
+            <div class="altavoz">
+                <p>・・・・・<br>
+                    ・・・・・・<br>
+                    ・・・・・<br>
+                    ・・・・・・<br>
+                    ・・・・・<br>
+                    ・・・・・・<br>
+                    ・・・・・<br>
+                    ・・・・・・
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Script que contiene el código JavaScript para la funcionalidad de la Gameboy -->
+    <script src="/main.js"></script>
+</body>
+</html>

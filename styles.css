@@ -1,0 +1,447 @@
+/* Estilo global para el cuerpo del documento */
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Fuente Nintendo */
+@font-face {
+    font-family: 'pretendoregular';
+    src: url(../fonts/pretendo.woff) format('woff2'),
+         url(../fonts/pretendo.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fuente ComicSansMS */
+@font-face {
+    font-family: 'ComicSansMS';
+    src: url(../fonts/ComicSansMS.woff) format('woff2'),
+         url(../fonts/ComicSansMS.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilo global para el cuerpo del documento */
+body {
+    height: 1000px;
+    width: 1000px;
+    margin: 0 0 0 0;
+    display: flex;
+}
+
+/* Estilos para la carcasa de la Gameboy */
+.carcasa {
+    margin: auto;
+    height: 900px;
+    width: 515px;
+    background: #fff132;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: black solid 1px;
+}
+
+/* Estilos para la pantalla de la Gameboy */
+.marco {
+    margin: 40px 25px 0px 25px;
+    height: 410px;
+    width: 465px;
+    background: rgb(22, 22, 22);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: black inset 1px;
+    display: flex;
+}
+
+/* Estilos para el botón de encendido */
+#boton {
+    height: 20px !important;
+    width: 10px !important ;
+    position: absolute;
+    background-color: black;
+    border:black solid 1px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    top:200px;
+    left: 758px;
+}
+
+/* Estilos para la pantalla de la Gameboy */
+.pantalla {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 320px;
+    width: 330px;
+    margin: 30px auto auto auto;
+    background: grey;
+    border:black solid 1px;
+}
+
+/* Estilos para el elemento de video */
+#video {
+    display: none;
+    background-color: white;
+    height: 320px;
+    width: 330px;
+}
+
+/* Estilos para el logo "Gameboy Color" */
+.color {
+    position: absolute;
+    top: 455px;
+    left: 376px;
+    font-size: 2em;
+    color: grey;
+    font-style: italic;
+}
+
+/* Estilos para la letra "c" en el logo "Gameboy Color" */
+.c {
+    font-family: "ComicSansMS";
+    position: absolute;
+    color: #830f2e;
+    top: 450px;
+    left: 530px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilos para la letra "o" en el logo "Gameboy Color" */
+.o {
+    font-family: "ComicSansMS";
+    position: absolute;
+    color: #3d3d83;
+    top: 450px;
+    left: 550px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilos para la letra "l" en el logo "Gameboy Color" */
+.l {
+    font-family: "ComicSansMS";
+    position: absolute;
+    color:#599c21;
+    top: 450px;
+    left: 576px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilos para la letra "o" adicional en el logo "Gameboy Color" */
+.oo {
+    font-family: "ComicSansMS";
+    position: absolute;
+    color: #9b752f;
+    top: 450px;
+    left: 595px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilos para la letra "r" en el logo "Gameboy Color" */
+.r {
+    font-family: "ComicSansMS";
+    position: absolute;
+    color:#08507e;
+    top: 450px;
+    left: 621px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilos para el LED apagado */
+.led::before {
+    display: none;
+    content:"";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: tomato;
+    position: absolute;
+    top: 250px;
+    left: 297px;
+}
+
+/* Estilos para el LED encendido */
+.led_on::before {
+    content:"";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: tomato;
+    box-shadow: 0px 0px 20px 2px rgb(252, 139, 120);
+    position: absolute;
+    top: 250px;
+    left: 297px;
+}
+
+/* Texto "POWER" para el LED apagado */
+.led::after {
+    content: "POWER";
+    color: grey;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 270px;
+    left: 272px;
+}
+
+/* Texto "POWER" para el LED encendido */
+.led_on::after {
+    content: "POWER";
+    color: grey;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 270px;
+    left: 272px;
+}
+
+/* Estilos para el logo "Nintendo" */
+.nintendo {
+    font-family: pretendoregular;
+    font-size: 25px;
+    width: 160px;
+    text-align: center;
+    border: #0a466e solid 3px;
+    border-radius: 20px;
+    position: relative;
+    color: #0a466e;
+    left:180px;
+    top:10px;
+}
+
+/* Estilos para la sección media de la consola */
+.mid {
+    height: 300px;
+    display: flex;
+}
+
+/* Estilos para el pad de dirección */
+.pad {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+}
+
+/* Estilos para el botón central */
+#centro {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 681px;
+    left: 355px;
+    color: rgb(31, 31, 31);
+}
+
+/* Estilos para el texto dentro del botón central */
+#centro p{
+    margin: auto;
+    position:relative;
+    top: -9px;
+}
+
+/* Estilos para el botón de dirección "Arriba" */
+#arriba {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 641px;
+    left: 355px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgba(0,0,0,.3);
+    border-bottom: none;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: 3px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el texto dentro del botón de dirección "Arriba" */
+#arriba p{
+    margin: auto;
+    position:relative;
+    top: -5px;
+}
+
+/* Estilos para el botón de dirección "Abajo" */
+#abajo {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 721px;
+    left: 355px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgba(0,0,0,.3);
+    border-top: none;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el texto dentro del botón de dirección "Abajo" */
+#abajo p{
+    margin: auto;
+    position:relative;
+    top: -9px;
+}
+
+/* Estilos para el botón de dirección "Derecha" */
+#der {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 681px;
+    left: 395px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgba(0,0,0,.3);
+    border-left: none;
+    border-radius: 0px 4px 4px 0px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el texto dentro del botón de dirección "Derecha" */
+#der p{
+    margin: auto;
+    position:relative;
+    top: -7px;
+}
+
+/* Estilos para el botón de dirección "Izquierda" */
+#izq {
+    position: absolute;
+    display: flex;
+    font-size: 2.5em;
+    background-color: #313131;
+    height: 40px;
+    width: 40px;
+    top: 681px;
+    left: 315px;
+    color: rgb(31, 31, 31);
+    border:1px solid rgba(0,0,0,.3);
+    border-right: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+/* Estilos para el texto dentro del botón de dirección "Izquierda" */
+#izq p{
+    margin: auto;
+    position:relative;
+    top: -9px;
+}
+
+/* Estilos para los botones A/B */
+.ab {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 600px;
+    left: 520px;
+}
+
+/* Estilos para el botón A */
+#a {
+    position: absolute;
+    left: 120px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: black solid 1px;
+    background: #313131;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el botón B */
+#b {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    height: 60px;
+    width: 60px;
+    border: black solid 1px;
+    border-radius: 50%;
+    background: #313131;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el texto dentro de los botones A/B */
+#a p, #b p {
+    font-size: 2em;
+    font-family: 'Trebuchet MS', sans-serif ;
+    color: rgb(31, 31, 31);
+    position: relative;
+    top: -21px;
+    left: 21px;
+    text-shadow: -1px -1px 0px rgba(61, 61, 61, 0.7);
+}
+
+/* Estilos para la sección inferior de la consola */
+.bot {
+    height: 140px;
+    display: flex;
+}
+
+/* Estilos para los botones Select/Start */
+.ss {
+    height: 100px;
+    width: 150px;
+    position: relative;
+    left: 190px;
+    display: flex;
+}
+
+/* Estilos para el botón Select */
+#select {
+    margin: 0 5px 0 0;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    border-radius: 30px;
+    border: black solid 1px;
+    background: #313131;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el botón Start */
+#start {
+    margin: 0 0 0 5px;
+    height: 20px;
+    width: 60px;
+    text-align: center;
+    border-radius: 30px;
+    border: black solid 1px;
+    background: #313131;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el texto dentro de los botones Select/Start */
+#sel, #str {
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', sans-serif ;
+    margin-top: 25px;
+    color: #0a466e ;
+}
+
+/* Estilos para el "diseño" del altavoz */
+.altavoz {
+    position: absolute;
+    text-align: center;
+    font-size: 1.2em ;
+    font-weight: bold;
+    left:610px;
+    top:820px;
+    line-height: 12px;
+    text-shadow: 1px 1px 0px #0a466e;
+}
