@@ -6,9 +6,7 @@ Este proyecto es una recreación del icónico diseño de la Gameboy Color utiliz
 
 ## Captura de pantalla
 
-<div align="center">
-  <img src="/captura.png" alt="Captura de pantalla">
-</div>
+![Captura de pantalla](/captura.png)
 
 ## Características
 
@@ -38,6 +36,8 @@ Este proyecto está bajo la Licencia [MIT](LICENSE).
 
 ---
 
-<div align="center">
-  <p>¡Gracias por visitar este proyecto! Si tienes alguna sugerencia o comentario, no dudes en contactarme. 😊</p>
-</div>
+Gracias por visitar este proyecto! Si tienes alguna sugerencia o comentario, no dudes en contactarme. 😊
+
+---
+
+Puedes acceder al sitio web del proyecto en GitHub Pages: [Gameboy Color HTML/CSS](https://davidtomas98.github.io/M1---Video-Consola/)
